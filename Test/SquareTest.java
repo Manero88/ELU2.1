@@ -1,5 +1,3 @@
-package Test;
-
 import org.junit.jupiter.api.*;
 import ApplicationLogic.Square;
 import org.junit.jupiter.api.BeforeEach;
