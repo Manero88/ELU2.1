@@ -10,9 +10,5 @@ abstract public class Vorm implements Shape{
     protected String name;
     protected double volume;
 
-    public String getName(){
-        return this.name;
-    }
-
 
 }

@@ -1,8 +1,5 @@
 package ApplicationLogic;
 
-
-import java.text.DecimalFormat;
-
 public class Square extends Vorm {
     private double length, width;
 

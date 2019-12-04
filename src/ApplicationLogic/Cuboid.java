@@ -1,7 +1,5 @@
 package ApplicationLogic;
 
-import java.text.DecimalFormat;
-
 public class Cuboid extends Vorm  {
 
     private final double height, length, width;
