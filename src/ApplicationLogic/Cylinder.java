@@ -1,24 +1,29 @@
 package ApplicationLogic;
 
-public class Cylinder implements Shape {
-    private String name;
-    private double radius, height, volume;
+public class Cylinder extends Vorm {
 
-    public Cylinder(String name, double radius, double height) {
-        this.name = name;
+    private double radius, height;
+
+    public Cylinder(double radius, double height) {
+        this.name = "Cylinder";
         this.radius = radius;
         this.height = height;
 
-        this.volume = Math.PI * Math.pow(radius,2.0) * height;
+        this.volume = calculateVolume();
     }
 
     @Override
-    public String getName() {
-        return name;
+    public double calculateVolume() {
+        return Math.PI * Math.pow(this.radius,2.0) * this.height;
+    }
+
+    @Override
+    public String printInfo() {
+        return "       Type: " + name + " r: " + radius + " h: " + height + " Volume = " + (double) Math.round(volume * 100) / 100;
     }
 
     @Override
     public double getVolume() {
-        return volume;
+        return (double) Math.round(volume * 100) / 100;
     }
 }
