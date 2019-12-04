@@ -31,4 +31,11 @@ class SquareTest {
         double volume = square.calculateVolume();
         Assertions.assertEquals(30,volume);
     }
+
+    @Test
+    @DisplayName("Check if the shape name is automatically set.")
+    void name(){
+        String name = "Square";
+        Assertions.assertEquals("Square",name);
+    }
 }
