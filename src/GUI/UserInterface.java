@@ -167,8 +167,6 @@ public class UserInterface {
                         e.printStackTrace();
                     }
 
-
-
             }
         });
 
